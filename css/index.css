@@ -23,3 +23,10 @@ div.preview-card img.preview {
     border-radius: 14px;
     margin: auto;
 }
+
+div.preview-card h4 {
+    color: rgba(255, 255, 255, 100);
+
+    font-weight: 600;
+    font-size: 1.6em;
+}

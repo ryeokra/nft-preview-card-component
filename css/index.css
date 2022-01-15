@@ -128,3 +128,8 @@ div.preview-card div.author img {
     font-size: 0.8em;
     text-align: center;
 }
+
+.attribution a {
+    color: rgba(255, 255, 255, 100);
+    text-decoration: underline;
+}

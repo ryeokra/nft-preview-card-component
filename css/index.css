@@ -37,3 +37,43 @@ div.preview-card p {
     font-weight: 300;
     font-size: 1em;
 }
+
+div.preview-card div.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.preview-card span.price {
+    color: rgba(0, 255, 245, 100);
+
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+div.preview-card span.price::before {
+    content: url(../images/icon-ethereum.svg);
+
+    width: 1em;
+    float: left;
+
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+div.preview-card span.time-remaining {
+    color: rgba(139, 172, 218, 100);
+
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+div.preview-card span.time-remaining::before {
+    content: url(../images/icon-clock.svg);
+
+    width: 1em;
+    float: left;
+
+    margin-right: 8px;
+}

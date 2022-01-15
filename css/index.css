@@ -30,3 +30,10 @@ div.preview-card h4 {
     font-weight: 600;
     font-size: 1.6em;
 }
+
+div.preview-card p {
+    color: rgba(139, 172, 218, 100);
+
+    font-weight: 300;
+    font-size: 1em;
+}

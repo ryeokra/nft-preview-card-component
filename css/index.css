@@ -86,3 +86,45 @@ div.preview-card span.time-remaining::before {
 
     margin-right: 8px;
 }
+
+
+div.preview-card div.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.preview-card div.author span {
+    color: rgba(139, 172, 218, 100);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+div.preview-card div.author span strong.author-name {
+   +    color: rgba(255, 255, 255, 100);
+   +
+   +    font-weight: 600;
+   +    font-size: 1em;
+   +}
+
+div.preview-card div.author img {
+    border: 1px solid rgba(255, 255, 255, 100);
+    border-radius: 50%;
+
+    margin: auto 6px auto 6px;
+}
+
+.attribution {
+    color: rgba(139, 172, 218, 100);
+
+    margin: 14px;
+
+    font-size: 0.8em;
+    text-align: center;
+}

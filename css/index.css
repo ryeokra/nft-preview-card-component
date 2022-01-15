@@ -18,3 +18,8 @@ div.preview-card {
 
     border-radius: 14px;
 }
+
+div.preview-card img.preview {
+    border-radius: 14px;
+    margin: auto;
+}

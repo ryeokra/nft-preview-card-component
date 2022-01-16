@@ -1,7 +1,11 @@
-from wsgiref.simple_server import make_server
+import os
+
 from pyramid.config import Configurator
+from waitress import serve
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+
     with Configurator() as config:
         config.include('pyramid_jinja2')
         config.add_static_view(name='static', path='../static/')
@@ -10,5 +14,4 @@ if __name__ == '__main__':
 
         app = config.make_wsgi_app()
 
-    server = make_server('0.0.0.0', 6543, app)
-    server.serve_forever()
+    serve(app, host='0.0.0.0', port=port)

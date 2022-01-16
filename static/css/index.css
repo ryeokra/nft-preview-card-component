@@ -87,6 +87,14 @@ div.preview-card h4 {
 
     font-weight: 600;
     font-size: 1.6em;
+
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+div.preview-card h4:hover {
+    color: rgba(0, 255, 245, 100);
+    cursor: pointer;
 }
 
 div.preview-card p {
@@ -156,11 +164,19 @@ div.preview-card div.author span {
 }
 
 div.preview-card div.author span strong.author-name {
-   +    color: rgba(255, 255, 255, 100);
-   +
-   +    font-weight: 600;
-   +    font-size: 1em;
-   +}
+    color: rgba(255, 255, 255, 100);
+
+    font-weight: 600;
+    font-size: 1em;
+
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+div.preview-card div.author span strong.author-name:hover {
+    color: rgba(0, 255, 245, 100);
+    cursor: pointer;
+}
 
 div.preview-card div.author img {
     border: 1px solid rgba(255, 255, 255, 100);

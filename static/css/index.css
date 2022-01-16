@@ -28,9 +28,58 @@ div.preview-card {
     border-radius: 14px;
 }
 
-div.preview-card img.preview {
+div.preview-card div.img-container {
+    max-width: 300px;
+    height: auto;
+
+    position: relative;
+}
+
+div.preview-card div.img-container img.preview {
+    display: block;
     border-radius: 14px;
     margin: auto;
+}
+
+div.preview-card div.img-container div.img-ovrl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: .3s ease-in;
+
+    background-color: rgba(0, 255, 245, 0);
+    border-radius: 14px;
+}
+
+div.preview-card div.img-container div:hover.img-ovrl {
+    background-color: rgba(0, 255, 245, 0.4);
+}
+
+div.preview-card div.img-container div.img-ovrl::after {
+    content: url(../images/icon-view.svg);
+
+    color: rgba(255, 255, 255, 100);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    display: none;
+
+    transition: .3s ease-in;
+}
+
+div.preview-card div.img-container:hover div.img-ovrl::after {
+    display: block;
 }
 
 div.preview-card h4 {
